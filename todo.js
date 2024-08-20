@@ -23,6 +23,13 @@ document.getElementById("add-btn").addEventListener("click",function(e){
     addTodo();
 })
 
+document.getElementById("input-box").addEventListener("keypress",function(e){
+        if(e.key==="Enter"){
+            e.preventDefault();
+            addTodo();
+        }
+        
+})
 let addTodo=()=>{
 
     const input = document.getElementById("input-box");
@@ -100,7 +107,7 @@ let renderTodo=()=>{
         <p>${todo.text}</p>
         </div>
 
-        <div class"buttons">
+        <div class="buttons">
         <button class="edit-btn" onClick="editTodo(${index})">Edit</button>
         <button class="del-btn" onClick="deleteTodo(${index})">Delete</button>
         </div>
