@@ -202,3 +202,25 @@ input{
     border: none;
 }
 
+/*Responsive*/
+
+@media (width <= 800px) {
+    .stats-cont{
+        width: 300px;
+        margin-left: -5rem;
+    }
+
+    #add-btn{
+        padding:10px;
+        margin-right: -2rem;
+    }
+
+    .task-cont{
+        margin-left: -5rem;
+        width: 300px;
+        height: 60px;
+    }
+    .buttons{
+        display: flex;
+    }
+  }
